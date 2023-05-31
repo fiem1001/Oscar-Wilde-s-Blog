@@ -35,6 +35,19 @@ nav ul li{
     font-size: 20px;
     line-height: 30px;
 }
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #038C7F;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+
+}
 .clear{
     clear: both;
 }
